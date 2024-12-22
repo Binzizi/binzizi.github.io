@@ -502,6 +502,42 @@ body {
     .bronze {
       color: var(--bronze);
     }
+    <style>
+  /* 在现有的 style 标签内添加或修改以下样式 */
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.875rem;
+  }
+
+  .text-red-600 {
+    color: #DE2910; /* 中国红 */
+  }
+
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-item {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s ease;
+  }
+
+  .experience-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-color: #3498DB;
+  }
+</style>
+
   </style>
 </head>
 <body>
@@ -857,53 +893,107 @@ body {
   </div>
 </section>
 
-      <section>
+<section>
   <h2>Professional Experience</h2>
   <div class="experience-grid">
     <div class="experience-item">
-      <h3>Assistant Professor</h3>
+      <div class="experience-header">
+        <h3>Assistant Professor</h3>
+        <div class="location">
+          <i class="fas fa-map-pin text-red-600"></i>
+          <span>Chengdu, China</span>
+        </div>
+      </div>
       <p>University of Electronic Science and Technology of China (UESTC)</p>
     </div>
     
     <div class="experience-item">
-      <h3>Editorial Assistant</h3>
+      <div class="experience-header">
+        <h3>Editorial Assistant</h3>
+        <div class="location">
+          <i class="fas fa-map-pin text-red-600"></i>
+          <span>Hong Kong</span>
+        </div>
+      </div>
       <p>Journal of Behavioural Public Administration</p>
     </div>
     
     <div class="experience-item">
-      <h3>Chinese Language Instructor</h3>
+      <div class="experience-header">
+        <h3>Chinese Language Instructor</h3>
+        <div class="location">
+          <i class="fas fa-map-pin text-red-600"></i>
+          <span>Montpellier, France</span>
+        </div>
+      </div>
       <p>Confucius Institute at University of Montpellier 1, France</p>
       <p>University of Montpellier 3, France</p>
     </div>
     
     <div class="experience-item">
-      <h3>French Language Instructor</h3>
+      <div class="experience-header">
+        <h3>French Language Instructor</h3>
+        <div class="location">
+          <i class="fas fa-map-pin text-red-600"></i>
+          <span>Beijing, China</span>
+        </div>
+      </div>
       <p>Beijing Open University</p>
     </div>
     
     <div class="experience-item">
-      <h3>Teaching Assistant</h3>
+      <div class="experience-header">
+        <h3>Teaching Assistant</h3>
+        <div class="location">
+          <i class="fas fa-map-pin text-red-600"></i>
+          <span>Beijing, China</span>
+        </div>
+      </div>
       <p>Party School of the Central Committee of C.P.C</p>
     </div>
 
     <div class="experience-item">
-      <h3>Legal Representative</h3>
+      <div class="experience-header">
+        <h3>Legal Representative</h3>
+        <div class="location">
+          <i class="fas fa-map-pin text-red-600"></i>
+          <span>Chengdu, China</span>
+        </div>
+      </div>
       <p>Bohr Quantum Intelligence Company</p>
     </div>
     
     <div class="experience-item">
-      <h3>Translator & Document Reviewer</h3>
+      <div class="experience-header">
+        <h3>Translator & Document Reviewer</h3>
+        <div class="location">
+          <i class="fas fa-map-pin text-red-600"></i>
+          <span>Beijing, China</span>
+        </div>
+      </div>
       <p>Médecins Sans Frontières (MSF)</p>
       <p class="text-sm">Specialization: Chinese Adoption Program Documentation</p>
     </div>
     
     <div class="experience-item">
-      <h3>Chinese Regional Translator</h3>
+      <div class="experience-header">
+        <h3>Chinese Regional Translator</h3>
+        <div class="location">
+          <i class="fas fa-map-pin text-red-600"></i>
+          <span>Beijing, China</span>
+        </div>
+      </div>
       <p>French Food Safety Authority</p>
     </div>
     
     <div class="experience-item">
-      <h3>Bilingual Tour Guide</h3>
+      <div class="experience-header">
+        <h3>Bilingual Tour Guide</h3>
+        <div class="location">
+          <i class="fas fa-map-pin text-red-600"></i>
+          <span>Beijing, China</span>
+        </div>
+      </div>
       <p>The Palace Museum & Summer Palace, Beijing</p>
     </div>
   </div>
