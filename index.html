@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +6,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     :root {
-      --primary-color: #4A5759;
-      --accent-color: #8E9AAF;
-      --highlight: #CBC0D3;
-      --bg-color: #B3DEE5;
-      --text-color: #2C3E50;
-      --link-color: #7D3C98;
+      --primary-color: #4A5759;      /* 优雅的深青灰色 */
+      --accent-color: #8E9AAF;       /* 柔和的灰紫色 */
+      --highlight: #CBC0D3;          /* 淡紫色 */
+      --bg-color: #B3DEE5;          /* 清新的浅蓝绿色 */
+      --text-color: #2C3E50;        /* 深蓝灰色文字 */
+      --link-color: #7D3C98;        /* 深紫色链接 */
       --white: #FFFFFF;
       --border-color: #E8E8E8;
     }
@@ -47,13 +45,13 @@
     }
 
     .profile {
-      background-color: #F3E8FF;
-      margin: 2rem 0;
-      padding: 2.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      border: 1px solid var(--border-color);
-    }
+  background-color: #F3E8FF;  /* 温柔的淡紫色马卡龙色 */
+  margin: 2rem 0;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border: 1px solid var(--border-color);
+}
 
     h1 {
       color: var(--primary-color);
@@ -72,34 +70,46 @@
       font-weight: 500;
     }
 
-    .profile h2 {
-      color: #7D3C98;
-      border-bottom: 2px solid #9B59B6;
+.profile h2 {
+  color: #7D3C98;  /* 深紫色 */
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #9B59B6;  /* 稍微浅一点的紫色作为下划线 */
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+    h3 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
     }
 
-    a {
-      color: var(--link-color);
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    a:hover {
-      color: #9B59B6;
-      text-decoration: underline;
+    .profile-header {
+      display: flex;
+      align-items: start;
+      gap: 2rem;
+      margin-bottom: 2rem;
     }
 
     .contact-info {
       margin-top: 1.5rem;
     }
 
-    .contact-info p {
-      margin-bottom: 0.8rem;
+    .contact-info a {
+      color: var(--link-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
     }
 
-    .contact-info i {
-      color: var(--accent-color);
-      width: 20px;
-      margin-right: 0.5rem;
+    .contact-info a:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+
+    .contact-info p {
+      margin-bottom: 0.8rem;
+      color: var(--text-color);
     }
 
     .research-interests {
@@ -110,17 +120,136 @@
     }
 
     .research-tag {
-      background-color: #B5E3E7;
+      background-color: #B5E3E7; (* 马卡龙蓝色 *);
       color: var(--primary-color);
       padding: 0.6rem 1.2rem;
       border-radius: 20px;
       font-size: 0.9rem;
-      border: 1px solid #B5E3E7;
+      border: 1px solid #B5E3E7; (* 马卡龙蓝色 *);
       transition: all 0.3s ease;
     }
 
     .research-tag:hover {
-      background-color: #A3D5D9;
+      background-color: #A3D5D9; (* hover时稍微深一点的蓝色 *);
+      color: var(--primary-color);  /* 保持文字颜色不变 */
+      border-color: #A3D5D9;
+    }
+
+    .publication-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .publication-item:last-child {
+      border-bottom: none;
+    }
+
+    .publication-year {
+      color: var(--accent-color);
+      font-weight: 600;
+    }
+
+    .biography p {
+      margin-bottom: 1.5rem;
+      color: var(--text-color);
+      line-height: 1.8;
+    }
+
+    .biography a {
+      color: var(--link-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .biography a:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+
+    .education-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .education-item:last-child {
+      border-bottom: none;
+    }
+
+    .teaching-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .teaching-item {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1rem;
+      background: var(color);
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .teaching-item:hover {
+      transform: translateX(5px);
+    }
+
+    .semester {
+      min-width: 100px;
+      color: var(--accent-color);
+      font-weight: 600;
+    }
+
+    .course-info h3 {
+      color: var(--primary-color);
+      margin-bottom: 0.3rem;
+    }
+
+    .course-info p {
+      color: var(--text-color);
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .honors-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .honors-list li {
+      position: relative;
+      padding: 1rem 1.5rem;
+      margin-bottom: 0.5rem;
+      background: var(--bg-color);
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .honors-list li:hover {
+      transform: translateX(5px);
+    }
+
+    .honors-list li::before {
+      content: "✦";
+      color: var(--highlight);
+      position: absolute;
+      left: 0.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .fa-envelope, .fa-id-card, .fa-graduation-cap, .fa-university {
+      color: var(--accent-color);
+      width: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover .fa-envelope,
+    .contact-info a:hover .fa-id-card,
+    .contact-info a:hover .fa-graduation-cap,
+    .contact-info a:hover .fa-university {
+      color: var(--primary-color);
     }
 
     @media (max-width: 768px) {
@@ -135,41 +264,53 @@
       h1 {
         font-size: 1.8rem;
       }
+
+      .teaching-item {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .semester {
+        min-width: auto;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <section class="profile">
-      <h1>Dr. Binzizi DONG (董斌孜孜)</h1>
-      <h2>Postdoctoral Fellow</h2>
-      <p>Centre for Public Affairs and Law</p>
-      <p>City University of Hong Kong</p>
-      
-      <div class="contact-info">
-        <p><i class="fas fa-envelope"></i><a href="mailto:binzizi.dong@cityu.edu.hk">binzizi.dong@cityu.edu.hk</a></p>
-        <p><i class="fas fa-id-card"></i>ORCID: 0000-0002-1471-2661</p>
-        <p><i class="fas fa-graduation-cap"></i><a href="https://scholar.google.com/citations?user=aLXWi88AAAAJ&hl=en">Google Scholar</a></p>
-        <p><i class="fas fa-university"></i><a href="https://scholars.cityu.edu.hk/en/persons/binzizi-dong(4a1657dc-0409-445b-8ee2-2dce14bd27cd).html">CityU Scholar</a></p>
+      <div class="profile-header">
+        <div>
+          <h1>Dr. Binzizi DONG (董斌孜孜)</h1>
+          <h2>Postdoctoral Fellow</h2>
+          <p>Centre for Public Affairs and Law</p>
+          <p>City University of Hong Kong</p>
+          
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:binzizi.dong@cityu.edu.hk">binzizi.dong@cityu.edu.hk</a></p>
+            <p><i class="fas fa-id-card"></i> ORCID: 0000-0002-1471-2661</p>
+            <p><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=aLXWi88AAAAJ&hl=en">Google Scholar</a></p>
+            <p><i class="fas fa-university"></i> <a href="https://scholars.cityu.edu.hk/en/persons/binzizi-dong(4a1657dc-0409-445b-8ee2-2dce14bd27cd).html">CityU Scholar</a></p>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <section class="biography">
-      <h2>Biography</h2>
-      <p>I pursued my PhD at the <a href="https://www.cityu.edu.hk/lamp/">Laboratory for Public Management & Policy (LaMP)</a>, under the supervision of <a href="https://www.ln.edu.hk/gia/people/academic-staff/richard-m-walker">Prof. Richard M. WALKER</a>. I was awarded the Dissertation Fellowship in July 2024 by the <a href="https://mp.weixin.qq.com/s/zT0jy_Rl6mfo8KYSFXdXLw">China-America Association for Public Affairs (CAAPA)</a>. I received my degree in October 2024 and took a postdoctoral position at the <a href="https://www.cityu.edu.hk/cpal/">Centre for Public Affairs and Law (CPAL)</a> at the City University of Hong Kong.</p>
-      <p>My research primarily focuses on behavioral public administration and computational social sciences, with interests in citizen-government relationships and public e-service delivery. My expertise includes experimental vignette methodology and machine learning approach.</p>
-    </section>
+      <section class="biography">
+        <h2>Biography</h2>
+        <p>I pursued my PhD at the <a href="https://www.cityu.edu.hk/lamp/">Laboratory for Public Management & Policy (LaMP)</a>, under the supervision of <a href="https://www.ln.edu.hk/gia/people/academic-staff/richard-m-walker">Prof. Richard M. WALKER</a>. I was awarded the Dissertation Fellowship in July 2024 by the <a href="https://mp.weixin.qq.com/s/zT0jy_Rl6mfo8KYSFXdXLw">China-America Association for Public Affairs (CAAPA)</a>. I received my degree in October 2024 and took a postdoctoral position at the <a href="https://www.cityu.edu.hk/cpal/">Centre for Public Affairs and Law (CPAL)</a> at the City University of Hong Kong.</p>
+        <p>My research primarily focuses on behavioral public administration and computational social sciences, with interests in citizen-government relationships and public e-service delivery. My expertise includes experimental vignette methodology and machine learning approach.</p>
+      </section>
 
-    <section class="research">
-      <h2>Research Interests</h2>
-      <div class="research-interests">
-        <span class="research-tag">Behavioral Public Administration</span>
-        <span class="research-tag">Computational Social Sciences</span>
-        <span class="research-tag">Citizen-Government Relationships</span>
-        <span class="research-tag">eHealth</span>
-        <span class="research-tag">Experiment</span>
-      </div>
-    </section>
+      <section class="research">
+        <h2>Research Interests</h2>
+        <div class="research-interests">
+          <span class="research-tag">Behavioral Public Administration</span>
+          <span class="research-tag">Computational Social Sciences</span>
+          <span class="research-tag">Citizen-Government Relationships</span>
+          <span class="research-tag">eHealth</span>
+          <span class="research-tag">Experiment</span>
+        </div>
+      </section>
 
        <section class="education">
         <h2>Education</h2>
@@ -771,3 +912,4 @@
     }
   }
 </style>
+
