@@ -25,8 +25,8 @@
     body {
       font-family: 'Inter', sans-serif;
       line-height: 1.6;
-      color: var(--text-color);
-      background-color: var(--bg-color);
+      color: #34495E; (改为深灰蓝色文字);
+      background-color: #F5F6FA;  /* 改为浅灰蓝色背景 */
     }
 
     .container {
@@ -41,11 +41,11 @@
       padding: 2.5rem;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      border: 1px solid var(--border-color);
+      border: 1px solid #ECF0F1;  /* 改为浅灰色边框 */
     }
 
     .profile {
-  background-color: #F3E8FF;  /* 温柔的淡紫色马卡龙色 */
+  background-color: #FFFFFF;  /* 改为白色背景 */
   margin: 2rem 0;
   padding: 2.5rem;
   border-radius: 8px;
@@ -54,7 +54,7 @@
 }
 
     h1 {
-      color: var(--primary-color);
+     color: #2C3E50;  /* 改为深蓝色 */
       margin-bottom: 1rem;
       font-size: 2.2rem;
       font-weight: 600;
@@ -62,10 +62,10 @@
     }
 
     h2 {
-      color: var(--accent-color);
+      color: #2C3E50;  /* 改为深蓝色 */
       margin-bottom: 1.2rem;
       font-size: 1.5rem;
-      border-bottom: 2px solid var(--highlight);
+      border-bottom: 2px solid #3498DB;  /* 改为明亮的蓝色 */
       padding-bottom: 0.5rem;
       font-weight: 500;
     }
@@ -97,7 +97,7 @@
     }
 
     .contact-info a {
-      color: var(--link-color);
+      color: #2980B9;  /* 改为链接蓝色 */
       text-decoration: none;
       transition: all 0.3s ease;
     }
@@ -120,17 +120,17 @@
     }
 
     .research-tag {
-      background-color: #B5E3E7; (* 马卡龙蓝色 *);
-      color: var(--primary-color);
+      background-color: rgba(52, 152, 219, 0.1);  /* 半透明的蓝色背景 */
+      color: #2C3E50;  /* 深蓝色文字 */
       padding: 0.6rem 1.2rem;
       border-radius: 20px;
       font-size: 0.9rem;
-      border: 1px solid #B5E3E7; (* 马卡龙蓝色 *);
+      border: 1px solid #3498DB;  /* 明亮的蓝色边框 */
       transition: all 0.3s ease;
     }
 
     .research-tag:hover {
-      background-color: #A3D5D9; (* hover时稍微深一点的蓝色 *);
+      background-color: rgba(52, 152, 219, 0.2);  /* hover时稍微深一点的蓝色 */
       color: var(--primary-color);  /* 保持文字颜色不变 */
       border-color: #A3D5D9;
     }
@@ -240,7 +240,7 @@
     }
 
     .fa-envelope, .fa-id-card, .fa-graduation-cap, .fa-university {
-      color: var(--accent-color);
+      color: #3498DB;  /* 改为明亮的蓝色 */
       width: 20px;
       transition: color 0.3s ease;
     }
