@@ -5,6 +5,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
+    html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #4B96C9 !important;
+}
     :root {
   --primary-color: #2C3E50;      /* 深蓝色，更专业的主色调 */
   --accent-color: #3498DB;        /* 修改这一行明亮蓝 */
@@ -23,17 +29,19 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #34495E;
-    background-color: #4B96C9;  /* 降低饱和度后的蓝色 */
 }
 
+
     .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: transparent;
+}
+
 
     section {
       background: var(--white);
