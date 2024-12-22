@@ -755,3 +755,133 @@
     </div>
   </div>
 </section>
+
+      <section>
+  <h2>Professional Experience</h2>
+  <div class="experience-grid">
+    <div class="experience-item">
+      <h3>Assistant Professor</h3>
+      <p>University of Electronic Science and Technology of China (UESTC)</p>
+    </div>
+    
+    <div class="experience-item">
+      <h3>Editorial Assistant</h3>
+      <p>Journal of Behavioural Public Administration</p>
+    </div>
+    
+    <div class="experience-item">
+      <h3>Chinese Language Instructor</h3>
+      <p>Confucius Institute at University of Montpellier 1, France</p>
+      <p>University of Montpellier 3, France</p>
+    </div>
+    
+    <div class="experience-item">
+      <h3>French Language Instructor</h3>
+      <p>Beijing Open University</p>
+    </div>
+    
+    <div class="experience-item">
+      <h3>Teaching Assistant</h3>
+      <p>Party School of the Central Committee of C.P.C</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Legal Representative & Chairman</h3>
+      <p>Bohr Quantum Intelligence Company</p>
+    </div>
+    
+    <div class="experience-item">
+      <h3>Translator & Document Reviewer</h3>
+      <p>Médecins Sans Frontières (MSF)</p>
+      <p class="text-sm">Specialization: Chinese Adoption Program Documentation</p>
+    </div>
+    
+    <div class="experience-item">
+      <h3>Chinese Regional Translator</h3>
+      <p>French Food Safety Authority</p>
+    </div>
+    
+    <div class="experience-item">
+      <h3>Bilingual Tour Guide</h3>
+      <p>The Palace Museum & Summer Palace, Beijing</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  :root {
+    --primary-color: #4A5759;
+    --accent-color: #8E9AAF;
+    --highlight: #CBC0D3;
+    --bg-color: #F8F7F9;
+    --text-color: #2C3E50;
+    --link-color: #6B5B95;
+    --white: #FFFFFF;
+    --border-color: #E8E8E8;
+  }
+
+  section {
+    background: var(--white);
+    margin: 2rem 0;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+  }
+
+  h2 {
+    color: var(--accent-color);
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--highlight);
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .experience-item {
+    padding: 1.5rem;
+    background: var(--bg-color);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+  }
+
+  .experience-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-color: var(--highlight);
+  }
+
+  .experience-item p {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .text-sm {
+    font-size: 0.875rem;
+    color: var(--accent-color);
+  }
+
+  @media (max-width: 768px) {
+    section {
+      padding: 1.5rem;
+    }
+
+    .experience-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
