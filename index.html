@@ -5,16 +5,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    :root {
-      --primary-color: #4A5759;      /* 优雅的深青灰色 */
-      --accent-color: #8E9AAF;       /* 柔和的灰紫色 */
-      --highlight: #CBC0D3;          /* 淡紫色 */
-      --bg-color: #B3DEE5;          /* 清新的浅蓝绿色 */
-      --text-color: #2C3E50;        /* 深蓝灰色文字 */
-      --link-color: #7D3C98;        /* 深紫色链接 */
-      --white: #FFFFFF;
-      --border-color: #E8E8E8;
-    }
+   :root {
+  --primary-color: #4A5759;      /* 优雅的深青灰色 */
+  --accent-color: #8E9AAF;       /* 柔和的灰紫色 */
+  --highlight: #CBC0D3;          /* 淡紫色 */
+  --bg-color: #B3DEE5;          /* 清新的浅蓝绿色 */
+  --text-color: #2C3E50;        /* 深蓝灰色文字 */
+  --link-color: #7D3C98;        /* 深紫色链接 */
+  --white: #FFFFFF;
+  --border-color: #E8E8E8;
+}
+
+/* 添加这部分链接样式 */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #9B59B6;
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
     * {
       margin: 0;
