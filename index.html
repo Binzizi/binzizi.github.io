@@ -345,27 +345,32 @@ body {
         </div>
       </section>
 
-       <section class="education">
-        <h2>Education</h2>
-        <div class="education-item">
-          <h3>City University of Hong Kong</h3>
-          <p>PhD in Public Policy and Administration</p>
-          <p><em>Award: China-American Association for Public Affairs Dissertation Fellowship</em></p>
-        </div>
-        <div class="education-item">
-          <h3>City University of Hong Kong</h3>
-          <p>MA in Urban Management</p>
-        </div>
-        <div class="education-item">
-          <h3>University of International Relations</h3>
-          <p>MA in French Literature and Comparative Literature</p>
-          <p><em>Awards: Best Student, Best Dissertation in French</em></p>
-        </div>
-        <div class="education-item">
-          <h3>University of International Relations</h3>
-          <p>Bachelor of Law in International Politics</p>
-        </div>
-      </section>
+      <section class="education">
+  <h2>Education</h2>
+  
+  <div class="education-item">
+    <h3>City University of Hong Kong</h3>
+    <p>PhD in Public Policy and Administration</p>
+    <p><em>Award: China-American Association for Public Affairs Dissertation Fellowship</em></p>
+  </div>
+
+  <div class="education-item">
+    <h3>City University of Hong Kong</h3>
+    <p>MA in Urban Management</p>
+  </div>
+
+  <div class="education-item">
+    <h3>University of International Relations</h3>
+    <p>MA in French Literature and Comparative Literature</p>
+    <p><em>Awards: Best Student, Best Dissertation in French</em></p>
+  </div>
+
+  <div class="education-item">
+    <h3>University of International Relations</h3>
+    <p>Bachelor of Law in International Politics</p>
+  </div>
+</section>
+
 
       <section class="publications">
         
@@ -651,6 +656,41 @@ body {
       padding-left: 1.5rem;
       border-left: 3px solid var(--accent-color);
     }
+    .education-item {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-left: 4px solid #3498DB;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.education-item:hover {
+  transform: translateX(5px);
+}
+
+.education-item h3 {
+  margin: 0;
+  color: #2C3E50;
+}
+
+.education-item p {
+  margin: 0.5rem 0;
+  color: #34495E;
+}
+
+.education-item em {
+  color: #3498DB;
+  font-style: italic;
+}
+
+.education h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3498DB;
+  margin-bottom: 20px;
+}
   </style>
 </head>
 <body>
