@@ -141,15 +141,21 @@ body {
       margin-top: 1rem;
     }
 
-    .research-tag {
-      background-color: rgba(52, 152, 219, 0.1);  /* 半透明的蓝色背景 */
-      color: #2C3E50;  /* 深蓝色文字 */
-      padding: 0.6rem 1.2rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      border: 1px solid #3498DB;  /* 明亮的蓝色边框 */
-      transition: all 0.3s ease;
-    }
+    /* 第一种颜色样式 */
+.research-tag:nth-child(4n+1),
+.research-tag:nth-child(4n+2) {
+  background-color: rgba(52, 152, 219, 0.1);
+  color: #2C3E50;
+  border: 1px solid #3498DB;
+}
+
+/* 第二种颜色样式 */
+.research-tag:nth-child(4n+3),
+.research-tag:nth-child(4n+4) {
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #27ae60;
+  border: 1px solid #2ecc71;
+}
 
     .research-tag:hover {
       background-color: rgba(52, 152, 219, 0.2);  /* hover时稍微深一点的蓝色 */
