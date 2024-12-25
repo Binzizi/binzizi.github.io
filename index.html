@@ -143,6 +143,15 @@ body {
 
     /* 第一种颜色样式 */
 .research-tag:nth-child(4n+1),
+.research-tag {
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+/* 第一种颜色样式 */
+.research-tag:nth-child(4n+1),
 .research-tag:nth-child(4n+2) {
   background-color: rgba(52, 152, 219, 0.1);
   color: #2C3E50;
@@ -157,11 +166,7 @@ body {
   border: 1px solid #2ecc71;
 }
 
-    .research-tag:hover {
-      background-color: rgba(52, 152, 219, 0.2);  /* hover时稍微深一点的蓝色 */
-      color: var(--primary-color);  /* 保持文字颜色不变 */
-      border-color: #A3D5D9;
-    }
+/* hover效果 */
 
     .publication-item {
       margin-bottom: 1.5rem;
